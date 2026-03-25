@@ -33,6 +33,7 @@ function moveBackward(targetField) {
 function moveForward(targetField) {
     targetField.focus();
     targetField.selectionStart = 0;
+    targetField.selectionEnd = targetField.value.length;
 }
 
 function updateCursorPositionSave() {
@@ -44,6 +45,10 @@ function updateCursorPositionSave() {
 
     } else if (activeElement.id === 'month') {
         cursorPositionSave += birthDateFields.day.maxSize + 1;
+    }
+
+    if (activeElement.selectionStart !== activeElement.selectionEnd) {
+        cursorPositionSave++;
     }
 }
 
