@@ -1,0 +1,45 @@
+@import url(../base.css);
+
+:root {
+    --switch-width: 64px;
+    --switch-height: 32px;
+    --button-size: 22px;
+    --button-margin: calc((var(--switch-height) - var(--button-size)) / 2);
+    --button-on-margin: calc(var(--switch-width) - var(--button-size) - var(--button-margin));
+}
+
+.switch {
+    width: var(--switch-width);
+    height: var(--switch-height);
+    border-radius: 20px;
+    position: relative;
+    background-color: firebrick;
+    transition: background-color 0.2s;
+}
+
+.switch:hover {
+    cursor: pointer;
+}
+
+.switch::before {
+    content: '';
+    width: var(--button-size);
+    height: var(--button-size);
+    top: var(--button-margin);
+    left: var(--button-margin);
+    transition: left 0.2s;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+.switch.on {
+    background-color: darkolivegreen;
+    transition: background-color 0.2s;
+}
+
+.switch.on::before {
+    left: var(--button-on-margin);
+    transition: left 0.2s;
+}
