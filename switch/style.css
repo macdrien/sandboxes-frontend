@@ -13,7 +13,7 @@
     height: var(--switch-height);
     border-radius: 20px;
     position: relative;
-    background-color: firebrick;
+    background-color: var(--red);
     transition: background-color 0.2s;
 }
 
@@ -31,11 +31,11 @@
     display: block;
     border-radius: 50%;
     position: absolute;
-    background-color: aliceblue;
+    background-color: var(--white);
 }
 
 .switch.on {
-    background-color: darkolivegreen;
+    background-color: var(--green);
     transition: background-color 0.2s;
 }
 

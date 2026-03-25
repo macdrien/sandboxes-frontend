@@ -1,3 +1,25 @@
+:root {
+    /* Color system */
+    --grey50: hsl(204, 15%, 94%);
+    --grey100: hsl(198, 16%, 84%);
+    --grey200: hsl(200, 15%, 73%);
+    --grey300: hsl(200, 16%, 62%);
+    --grey400: hsl(200, 15%, 54%);
+    --grey500: hsl(200, 18%, 46%);
+    --grey600: hsl(199, 18%, 40%);
+    --grey700: hsl(199, 18%, 33%);
+    --grey800: hsl(200, 18%, 26%);
+    --grey900: hsl(200, 19%, 18%);
+
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+
+    --green: hsl(89, 46%, 48%);
+    --red: hsl(0, 100%, 42%);
+    --blue: hsl(207, 90%, 54%);
+    --yellow: hsl(54, 100%, 62%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +27,5 @@
 }
 
 .main {
-    border: 1px solid lightgray;
+    border: 1px solid var(--grey100);
 }
